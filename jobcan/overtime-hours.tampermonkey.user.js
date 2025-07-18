@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         [Jobcan] 残業時間
 // @namespace    https://ssl.jobcan.jp/
-// @version      1.0.0
+// @version      1.0.1
 // @description  残業時間
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=jobcan.jp
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=https://id.jobcan.jp
 // @author       wineAk
 // @match        https://ssl.jobcan.jp/employee/attendance
 // ==/UserScript==

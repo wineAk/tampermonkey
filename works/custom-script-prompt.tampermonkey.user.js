@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         [Works] ChatGPT支援UI
 // @namespace    https://*.works.app
-// @version      1.0.0
+// @version      1.0.1
 // @description  ChatGPT支援UI（サイド一体型ロボットトグル 完全動作版）
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=https://*.works.app
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=https://works.saaske.com
 // @author       wineAk
 // @match        https://*.works.app/*
 // ==/UserScript==

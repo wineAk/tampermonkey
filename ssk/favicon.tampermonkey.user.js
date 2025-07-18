@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         [Saaske] ファビコン変更
 // @namespace    https://my.saaske.com/
-// @version      1.0.0
+// @version      1.0.1
 // @description  ファビコンをサービス毎に変更
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=https://my.saaske.com
 // @author       wineAk
 // @match        https://*.saaske.com/*
-// @match        https://*.work-s.app/*
+// @match        https://*.works.app/*
 // ==/UserScript==
 
 (function() {
