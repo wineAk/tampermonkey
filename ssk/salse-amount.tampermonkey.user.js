@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [Saaske - Salse] 月額表のJSON取得
 // @namespace    https://my.saaske.com/
-// @version      1.0.0
+// @version      1.0.1
 // @description  固定売上集計からJSONを取得
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=https://my.saaske.com
 // @author       wineAk
@@ -19,7 +19,12 @@
   // ボタンを追加
   const button = document.createElement('button');
   button.textContent = 'JSON取得';
-  button.title = "v2.0.0";
+  button.title = "v1.0.1";
+  button.style.backgroundColor = "#2FA5CA";
+  button.style.color = "#FFF";
+  button.style.borderRadius = "0.5rem";
+  button.style.border = "none";
+  button.style.cursor = "pointer";
   button.onclick = _ => {
     const json = getProjectData();
     navigator.clipboard.writeText(json).then(_ => alert('JSONをコピーしました'));
