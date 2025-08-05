@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [Saaske] カレンダーの日付
 // @namespace    https://my.saaske.com/
-// @version      1.0.1
+// @version      1.0.2
 // @description  カレンダーの土日祝日に色を付ける
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=https://my.saaske.com
 // @author       wineAk
@@ -106,8 +106,10 @@ border: 1px solid var(--color-pink-400) !important;
       const holidays = await response.json()
       console.log('holidays', holidays)
       // 現在の値を保持しておく
-      const $target = $(`.${TARGET_ID}`);
-      const currentVal = $target.val();
+      const lists = Array.from(document.querySelectorAll(`.${TARGET_ID}`)).map(elm => {
+        return { elm, val: elm.value }
+      })
+      // datepicker
       const today = new Date()
       const Y = today.getFullYear()
       const M = today.getMonth()
@@ -125,7 +127,7 @@ border: 1px solid var(--color-pink-400) !important;
           beforeShowDay: d => getCalendarSetting(d, holidays),
       })
       // 設定後に元の値を再代入
-      if ($target.length > 0) $target.val(currentVal)
+      lists.forEach((list) => $(list.elm).val(list.val))
   }
 
   /**
