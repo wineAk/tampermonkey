@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [Saaske - Salse] タブを追加
 // @namespace    https://my.saaske.com/
-// @version      1.0.0
+// @version      1.0.1
 // @description  タブを追加
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=https://my.saaske.com
 // @author       wineAk
@@ -44,6 +44,16 @@
           padding: 0 10px;
           display: flex;
           align-items: center;
+      }
+      /* タブを綺麗に並べる */
+      .detail_tab tr {
+          display: flex;
+      }
+      .detail_tab .send_tab {
+          position: unset;
+      }
+      .detail_tab td:not([width="90"]) + [width="90"] {
+          margin-left: auto;
       }
     `;
     document.head.appendChild(style);
