@@ -5,7 +5,7 @@
 // @description  残業時間
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=https://id.jobcan.jp
 // @author       wineAk
-// @match        https://ssl.jobcan.jp/employee/attendance
+// @match        https://ssl.jobcan.jp/employee/attendance*
 // ==/UserScript==
 
 (function() {
